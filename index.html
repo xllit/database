@@ -20,12 +20,16 @@
             color: #333;
             font-weight: bold;
         }
+        @font-face {
+	        font-family: kitten;
+	        src: url(./kitten.ttf);
+        }
     </style>
 </head>
 <body>
 
-    <div class="message">
-        文件将会被自动下载...
+    <div class="message" style="font-family: kitten;">
+        已经向Github发送js下载请求...
     </div>
 
     <!-- 自动触发下载的链接 -->
