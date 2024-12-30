@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自动下载</title>
+    <style>
+        body {
+            background-color: #add8ee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            text-align: center;
+            font-size: 40px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message">
+        文件将会被自动下载...
+    </div>
+
+    <!-- 自动触发下载的链接 -->
+    <a id="downloadLink" href="songoftime.mp3" download></a>
+
+    <script>
+        // 页面加载完成后自动触发下载
+        window.onload = function() {
+            document.getElementById('downloadLink').click();
+        };
+    </script>
+</body>
+</html>
